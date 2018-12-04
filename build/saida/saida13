@@ -1,0 +1,54 @@
+presolving:
+(round 1, fast)       5063196 del vars, 4821759 del conss, 0 add conss, 2175900 chg bounds, 487296 chg sides, 487296 chg coeffs, 0 upgd conss, 0 impls, 7041 clqs
+(round 2, fast)       9375900 del vars, 6997659 del conss, 0 add conss, 2175900 chg bounds, 487296 chg sides, 487296 chg coeffs, 0 upgd conss, 0 impls, 7041 clqs
+(round 3, fast)       9375900 del vars, 6997659 del conss, 0 add conss, 2225900 chg bounds, 487296 chg sides, 487296 chg coeffs, 0 upgd conss, 0 impls, 7041 clqs
+(round 4, exhaustive) 9375900 del vars, 6997659 del conss, 0 add conss, 2226400 chg bounds, 487296 chg sides, 487296 chg coeffs, 231141 upgd conss, 0 impls, 7041 clqs
+   (121.3s) probing: 51/224100 (0.0%) - 0 fixings, 0 aggregations, 0 implications, 0 bound changes
+   (121.3s) probing aborted: 50/50 successive totally useless probings
+   Deactivated symmetry handling methods, since SCIP was built without symmetry detector (SYM=none).
+presolving (5 rounds: 5 fast, 2 medium, 2 exhaustive):
+ 9375900 deleted vars, 6997659 deleted constraints, 0 added constraints, 2226400 tightened bounds, 0 added holes, 487296 changed sides, 487296 changed coefficients
+ 224100 implications, 7041 cliques
+presolved problem has 274600 variables (224100 bin, 0 int, 0 impl, 50500 cont) and 231641 constraints
+ 224100 constraints of type <varbound>
+   7041 constraints of type <setppc>
+    500 constraints of type <linear>
+Presolving Time: 97.56
+
+ time | node  | left  |LP iter|LP it/n| mem |mdpt |frac |vars |cons |cols |rows |cuts |confs|strbr|  dualbound   | primalbound  |  gap   
+Q 127s|     1 |     0 |     0 |     - |  24G|   0 |   - | 274k| 231k| 274k| 231k|   0 |   0 |   0 | 0.000000e+00 | 5.329000e+05 |    Inf 
+  462s|     1 |     0 | 44091 |     - |  24G|   0 |5088 | 274k| 231k| 274k| 231k|   0 |   2 |   0 | 3.915336e+05 | 5.329000e+05 |  36.11%
+  516s|     1 |     0 | 44736 |     - |  24G|   0 |5139 | 274k| 231k| 274k| 231k|   4 |   2 |   0 | 3.915996e+05 | 5.329000e+05 |  36.08%
+  583s|     1 |     0 | 47844 |     - |  24G|   0 |5140 | 274k| 231k| 274k| 231k|   8 |   2 |   0 | 3.916404e+05 | 5.329000e+05 |  36.07%
+  625s|     1 |     0 | 48907 |     - |  24G|   0 |5179 | 274k| 231k| 274k| 231k|  19 |   2 |   0 | 3.917723e+05 | 5.329000e+05 |  36.02%
+  654s|     1 |     0 | 49518 |     - |  24G|   0 |5221 | 274k| 231k| 274k| 231k|  23 |   2 |   0 | 3.918141e+05 | 5.329000e+05 |  36.01%
+  684s|     1 |     0 | 50002 |     - |  24G|   0 |4940 | 274k| 231k| 274k| 231k|  39 |   2 |   0 | 3.918473e+05 | 5.329000e+05 |  36.00%
+  711s|     1 |     0 | 50581 |     - |  24G|   0 |5219 | 274k| 231k| 274k| 231k|  47 |   2 |   0 | 3.918708e+05 | 5.329000e+05 |  35.99%
+  745s|     1 |     0 | 51032 |     - |  24G|   0 |5148 | 274k| 231k| 274k| 231k|  51 |   2 |   0 | 3.918727e+05 | 5.329000e+05 |  35.99%
+  783s|     1 |     0 | 51434 |     - |  24G|   0 |5133 | 274k| 231k| 274k| 231k|  55 |   2 |   0 | 3.918879e+05 | 5.329000e+05 |  35.98%
+  823s|     1 |     0 | 51680 |     - |  24G|   0 |5297 | 274k| 231k| 274k| 231k|  59 |   2 |   0 | 3.918930e+05 | 5.329000e+05 |  35.98%
+  871s|     1 |     0 | 52235 |     - |  24G|   0 |5215 | 274k| 231k| 274k| 231k|  71 |   2 |   0 | 3.919525e+05 | 5.329000e+05 |  35.96%
+  912s|     1 |     0 | 52244 |     - |  24G|   0 |5217 | 274k| 231k| 274k| 231k|  73 |   2 |   0 | 3.919608e+05 | 5.329000e+05 |  35.96%
+E1820s|     1 |     0 | 65736 |     - |  25G|   0 |5217 | 274k| 231k| 274k| 231k|  73 |   2 |   0 | 3.919608e+05 | 4.099000e+05 |   4.58%
+ 3490s|     1 |     0 | 65736 |     - |  25G|   0 |5217 | 274k| 231k| 274k| 231k|  73 |   2 |   0 | 3.919608e+05 | 4.099000e+05 |   4.58%
+ time | node  | left  |LP iter|LP it/n| mem |mdpt |frac |vars |cons |cols |rows |cuts |confs|strbr|  dualbound   | primalbound  |  gap   
+ 3526s|     1 |     0 | 65764 |     - |  25G|   0 |5284 | 274k| 231k| 274k| 231k|  75 |   2 |   0 | 3.919608e+05 | 4.099000e+05 |   4.58%
+ 3657s|     1 |     2 | 66628 |     - |  25G|   0 |5079 | 274k| 231k| 274k| 231k|  75 |   2 |  22 | 3.919858e+05 | 4.099000e+05 |   4.57%
+  333m|   100 |   101 |  1960k|19275.2 |  26G|  13 |5038 | 274k| 231k| 274k| 231k| 243 |  12 | 497 | 3.921175e+05 | 4.099000e+05 |   4.53%
+K 334m|   101 |   102 |  1963k|19108.4 |  26G|  13 |5066 | 274k| 231k| 274k| 231k| 243 |  12 | 497 | 3.921847e+05 | 4.095000e+05 |   4.42%
+  476m|   200 |   201 |  2528k|12442.9 |  26G|  15 |4797 | 274k| 231k| 274k| 231k| 362 |  12 | 754 | 3.922240e+05 | 4.095000e+05 |   4.40%
+K 511m|   221 |   222 |  2686k|11974.8 |  26G|  15 |5088 | 274k| 231k| 274k| 231k| 368 |  22 | 821 | 3.922272e+05 | 4.090000e+05 |   4.28%
+  692m|   300 |   301 |  3430k|11297.3 |  26G|  15 |4835 | 274k| 231k| 274k| 231k| 411 |  22 |1189 | 3.922715e+05 | 4.090000e+05 |   4.26%
+  870m|   400 |   401 |  4159k|10294.2 |  27G|  17 |4763 | 274k| 231k| 274k| 231k| 443 |  22 |1702 | 3.923170e+05 | 4.090000e+05 |   4.25%
+N 889m|   421 |   422 |  4218k|9919.9 |  27G|  17 |5115 | 274k| 231k| 274k| 231k| 443 |  22 |1733 | 3.923195e+05 | 4.088000e+05 |   4.20%
+ 1010m|   500 |   501 |  4666k|9246.9 |  27G|  17 |4645 | 274k| 231k| 274k| 231k| 501 |  22 |1958 | 3.923300e+05 | 4.088000e+05 |   4.20%
+ 1164m|   600 |   601 |  5290k|8745.5 |  27G|  17 |4831 | 274k| 231k| 274k| 231k| 527 |  22 |2303 | 3.923521e+05 | 4.088000e+05 |   4.19%
+C1203m|   621 |   622 |  5453k|8711.7 |  27G|  17 |4766 | 274k| 231k| 274k| 231k| 533 |  22 |2410 | 3.923583e+05 | 4.062000e+05 |   3.53%
+ 1306m|   700 |   701 |  5833k|8270.6 |  27G|  17 |5017 | 274k| 231k| 274k| 231k| 585 |  22 |2629 | 3.923782e+05 | 4.062000e+05 |   3.52%
+ 1437m|   800 |   801 |  6324k|7850.3 |  27G|  17 |4746 | 274k| 231k| 274k| 231k| 736 |  22 |2895 | 3.923878e+05 | 4.062000e+05 |   3.52%
+ 1553m|   900 |   901 |  6770k|7473.4 |  27G|  19 |4753 | 274k| 231k| 274k| 231k| 847 |  22 |3105 | 3.924214e+05 | 4.062000e+05 |   3.51%
+pressed CTRL-C 1 times (5 times for forcing termination)
+pressed CTRL-C 2 times (5 times for forcing termination)
+pressed CTRL-C 3 times (5 times for forcing termination)
+pressed CTRL-C 4 times (5 times for forcing termination)
+pressed CTRL-C 5 times. forcing termination.

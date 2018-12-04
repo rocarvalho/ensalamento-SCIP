@@ -1,0 +1,3 @@
+/home/rodrigo/scip-classroom/build/CMakeFiles/edit_cache.dir
+/home/rodrigo/scip-classroom/build/CMakeFiles/rebuild_cache.dir
+/home/rodrigo/scip-classroom/build/CMakeFiles/scip_example.dir

@@ -1,0 +1,43 @@
+presolving:
+(round 1, fast)       1987672 del vars, 1927792 del conss, 0 add conss, 779200 chg bounds, 248472 chg sides, 248472 chg coeffs, 0 upgd conss, 0 impls, 4208 clqs
+(round 2, fast)       3659200 del vars, 2706992 del conss, 0 add conss, 779200 chg bounds, 248472 chg sides, 248472 chg coeffs, 0 upgd conss, 0 impls, 4208 clqs
+(round 3, fast)       3659200 del vars, 2706992 del conss, 0 add conss, 819200 chg bounds, 248472 chg sides, 248472 chg coeffs, 0 upgd conss, 0 impls, 4208 clqs
+(round 4, exhaustive) 3659200 del vars, 2706992 del conss, 0 add conss, 819600 chg bounds, 248472 chg sides, 248472 chg coeffs, 185008 upgd conss, 0 impls, 4208 clqs
+   (46.1s) probing: 51/180800 (0.0%) - 0 fixings, 0 aggregations, 0 implications, 0 bound changes
+   (46.1s) probing aborted: 50/50 successive totally useless probings
+   Deactivated symmetry handling methods, since SCIP was built without symmetry detector (SYM=none).
+presolving (5 rounds: 5 fast, 2 medium, 2 exhaustive):
+ 3659200 deleted vars, 2706992 deleted constraints, 0 added constraints, 819600 tightened bounds, 0 added holes, 248472 changed sides, 248472 changed coefficients
+ 180800 implications, 4208 cliques
+presolved problem has 221200 variables (180800 bin, 0 int, 0 impl, 40400 cont) and 185408 constraints
+ 180800 constraints of type <varbound>
+   4208 constraints of type <setppc>
+    400 constraints of type <linear>
+Presolving Time: 38.43
+
+ time | node  | left  |LP iter|LP it/n| mem |mdpt |frac |vars |cons |cols |rows |cuts |confs|strbr|  dualbound   | primalbound  |  gap   
+Q50.4s|     1 |     0 |     0 |     - |  10G|   0 |   - | 221k| 185k| 221k| 185k|   0 |   0 |   0 | 0.000000e+00 | 8.617000e+05 |    Inf 
+ 4300s|     1 |     0 |216220 |     - |  10G|   0 |5848 | 221k| 185k| 221k| 185k|   0 |   2 |   0 | 6.334970e+05 | 8.617000e+05 |  36.02%
+ 4711s|     1 |     0 |227797 |     - |  10G|   0 |5956 | 221k| 185k| 221k| 185k|  12 |   2 |   0 | 6.335988e+05 | 8.617000e+05 |  36.00%
+ 4922s|     1 |     0 |232826 |     - |  10G|   0 |6086 | 221k| 185k| 221k| 185k|  14 |   2 |   0 | 6.336767e+05 | 8.617000e+05 |  35.98%
+ 5345s|     1 |     0 |247466 |     - |  10G|   0 |6072 | 221k| 185k| 221k| 185k|  18 |   2 |   0 | 6.337993e+05 | 8.617000e+05 |  35.96%
+ 5648s|     1 |     0 |257220 |     - |  10G|   0 |6080 | 221k| 185k| 221k| 185k|  26 |   2 |   0 | 6.338389e+05 | 8.617000e+05 |  35.95%
+ 6166s|     1 |     0 |276209 |     - |  10G|   0 |6105 | 221k| 185k| 221k| 185k|  36 |   2 |   0 | 6.339363e+05 | 8.617000e+05 |  35.93%
+ 6611s|     1 |     0 |290954 |     - |  10G|   0 |6138 | 221k| 185k| 221k| 185k|  48 |   2 |   0 | 6.339730e+05 | 8.617000e+05 |  35.92%
+ 6805s|     1 |     0 |295051 |     - |  10G|   0 |6142 | 221k| 185k| 221k| 185k|  52 |   2 |   0 | 6.339757e+05 | 8.617000e+05 |  35.92%
+ 6914s|     1 |     0 |296315 |     - |  10G|   0 |6170 | 221k| 185k| 221k| 185k|  57 |   2 |   0 | 6.339769e+05 | 8.617000e+05 |  35.92%
+ 7008s|     1 |     0 |297107 |     - |  10G|   0 |6184 | 221k| 185k| 221k| 185k|  58 |   2 |   0 | 6.339890e+05 | 8.617000e+05 |  35.92%
+ 7362s|     1 |     0 |309230 |     - |  10G|   0 |6154 | 221k| 185k| 221k| 185k|  66 |   2 |   0 | 6.340040e+05 | 8.617000e+05 |  35.91%
+ 7522s|     1 |     0 |312980 |     - |  10G|   0 |6180 | 221k| 185k| 221k| 185k|  69 |   2 |   0 | 6.340168e+05 | 8.617000e+05 |  35.91%
+ 7599s|     1 |     0 |314213 |     - |  10G|   0 |6172 | 221k| 185k| 221k| 185k|  71 |   2 |   0 | 6.340174e+05 | 8.617000e+05 |  35.91%
+E 205m|     1 |     0 |385339 |     - |  10G|   0 |6172 | 221k| 185k| 221k| 185k|  71 |   2 |   0 | 6.340174e+05 | 6.606000e+05 |   4.19%
+ time | node  | left  |LP iter|LP it/n| mem |mdpt |frac |vars |cons |cols |rows |cuts |confs|strbr|  dualbound   | primalbound  |  gap   
+L 221m|     1 |     0 |385339 |     - |  10G|   0 |6172 | 221k| 185k| 221k| 185k|  71 |   2 |   0 | 6.340174e+05 | 6.578000e+05 |   3.75%
+  252m|     1 |     0 |385339 |     - |  10G|   0 |6172 | 221k| 185k| 221k| 185k|  71 |   2 |   0 | 6.340174e+05 | 6.578000e+05 |   3.75%
+  253m|     1 |     0 |385506 |     - |  11G|   0 |6170 | 221k| 185k| 221k| 185k|  72 |   2 |   0 | 6.340185e+05 | 6.578000e+05 |   3.75%
+  262m|     1 |     2 |386080 |     - |  11G|   0 |6062 | 221k| 185k| 221k| 185k|  72 |   2 |  34 | 6.340185e+05 | 6.578000e+05 |   3.75%
+pressed CTRL-C 1 times (5 times for forcing termination)
+pressed CTRL-C 2 times (5 times for forcing termination)
+pressed CTRL-C 3 times (5 times for forcing termination)
+pressed CTRL-C 4 times (5 times for forcing termination)
+pressed CTRL-C 5 times. forcing termination.

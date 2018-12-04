@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/scip_example.dir/main.cpp.o  -o scip_example  -L/opt/scip/lib -lscip -lsoplex -lpthread -lm -lz -Wl,-rpath,/opt/scip/lib 

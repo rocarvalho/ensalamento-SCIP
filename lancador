@@ -1,0 +1,9 @@
+import glob, os
+import subprocess
+os.getcwd()
+
+for file in glob.glob("../instancias_class/*"):
+	cmd = "./una -h " + file + " >> saida"
+	print(cmd)
+	os.system(cmd)
+
